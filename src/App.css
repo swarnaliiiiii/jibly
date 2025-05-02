@@ -7,9 +7,33 @@
     background-size: 40px 40px;
   }
 
-.text-glow {
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8),
-                 0 0 12px rgba(255, 105, 180, 0.6),
-                 0 0 16px rgba(255, 105, 180, 0.5);
+/* App.css */
+
+.text-glow-pulse {
+    color: #fff;
+    text-shadow:
+      0 0 6px #fff,
+      0 0 12px #ec4899,
+      0 0 20px #ec4899,
+      0 0 30px #ec4899;
+  
+    animation: pulseText 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes pulseText {
+    0%, 100% {
+      text-shadow:
+        0 0 6px #fff,
+        0 0 12px #ec4899,
+        0 0 20px #ec4899,
+        0 0 30px #ec4899;
+    }
+    50% {
+      text-shadow:
+        0 0 10px #fff,
+        0 0 20px #ec4899,
+        0 0 30px #ec4899,
+        0 0 40px #ec4899;
+    }
   }
   
