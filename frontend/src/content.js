@@ -1,12 +1,12 @@
 function ExtractDetails() {
-    const jtitle = document.querySelector('h1')?.innerText || 'No title found';
-    const jdescription = document.querySelector('article')?.innerText || 'No description found';
+    const title = document.querySelector('h1')?.innerText || 'No title found';
+    const description = document.querySelector('article')?.innerText || 'No description found';
     const jobData = {
-        title: jtitle,
-        description: jdescription,
+        title: title,
+        description: description,
         userId: 'user123',
     };
-    fetch('http://localhost:5173/joh', {
+    fetch('http://localhost:5173/analyze', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
